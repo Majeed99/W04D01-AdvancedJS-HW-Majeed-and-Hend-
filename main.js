@@ -1,9 +1,10 @@
-// /------------
+
 async function request() {
   try {
     const response = await fetch(
       "https://www.googleapis.com/books/v1/volumes?q=isbn:0747532699"
     );
+
     const json = await response.json();
     const items = json.items;
     console.log(items[0].volumeInfo.title);
@@ -37,4 +38,4 @@ function stop() {
   let show = document.getElementById("show");
   show.innerHTML = "";
   show.appendChild(sentence3);
-}
+
