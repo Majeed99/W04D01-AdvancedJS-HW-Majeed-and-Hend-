@@ -1,0 +1,28 @@
+<html>
+  <body>
+    <h1>
+      Press the buttons below to see how setTimeout is used. Wait to see how the
+      text below changes after a timeout of 3 seconds.
+    </h1>
+
+    <div>
+      <input
+        type="button"
+        onclick="run()"
+        id="testTimeOut"
+        value="test timeout"
+      />
+
+      <input
+        type="button"
+        onclick="stop()"
+        id="clearTimeOut"
+        value="clear timeout"
+      />
+      <div id="show"></div>
+    </div>
+    <br />
+    <h3 id="timeout_text"></h3>
+  </body>
+  <script src="./main.js"></script>
+</html>
