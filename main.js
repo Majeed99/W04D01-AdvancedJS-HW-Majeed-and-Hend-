@@ -1,4 +1,4 @@
-//------------
+
 async function request() {
   try {
     const response = await fetch(
@@ -38,4 +38,4 @@ function stop() {
   let show = document.getElementById("show");
   show.innerHTML = "";
   show.appendChild(sentence3);
-}
+
